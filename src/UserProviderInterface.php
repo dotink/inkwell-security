@@ -4,7 +4,7 @@
 	use Dotink\Flourish\Collection;
 
 	/**
-	 * Provides user abstraction for the account controller
+	 * Provides user creation and management abstraction for auth services
 	 *
 	 * @copyright Copyright (c) 2015, Matthew J. Sahagian
 	 * @author Matthew J. Sahagian [mjs] <msahagian@dotink.org>
