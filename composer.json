@@ -1,0 +1,40 @@
+{
+	"name": "dotink/inkwell-security",
+	"description": "Authentication and security for inKWell",
+	"keywords": ["security", "authentication"],
+	"license": "AGPL-3.0",
+	"type": "opus-package",
+	"authors": [
+		{
+			"name": "Matthew J. Sahagian",
+			"email": "msahagian@dotink.org",
+			"role": "Lead Architect / Developer"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://packages.dotink.org"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"dotink/inkwell-controller": "dev-master",
+		"dotink/inkwell-view": "dev-master",
+		"dotink/inkwell-auth": "dev-master",
+		"dotink/flourish-message": "dev-master",
+		"ircmaxell/password-compat": "dev-master",
+		"firebase/php-jwt": "dev-master"
+	},
+	"autoload": {
+		"classmap": ["src/"]
+	},
+	"extra": {
+		"opus": {
+			"inkwell/framework": {
+				"plugin/config" : "config",
+				"plugin/include" : "include"
+			}
+		}
+	}
+}
