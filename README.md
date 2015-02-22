@@ -1,4 +1,3 @@
-Project Name
+Authentication and security for inKWell
 =====
 
-A description of the project goes here
