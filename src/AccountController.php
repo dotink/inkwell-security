@@ -86,7 +86,7 @@
 
 			if (!$this->userProvider && $action != 'forbidden') {
 				$this->response->setStatus(HTTP\NOT_FOUND);
-				$this->router->defer(NULL);
+				$this->router->defer();
 			}
 
 			$this->view->load('account/' . $action . '.html');
@@ -313,7 +313,7 @@
 		 */
 		private function completeLogin($user)
 		{
-			$this->login = $this->userProvider->getLogin($user);
+			$this->login = $this->userProvider->getUserLogin($user);
 
 			$this->refresh();
 
@@ -322,7 +322,7 @@
 				$this->userProvider->getLoginRedirect($user)
 			));
 
-			$this->router->demit(NULL);
+			$this->router->demit();
 		}
 
 
